@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Orbitron", sans-serif;
+  background-color: lightskyblue;
+}
+.gallery_container {
+  width: 100vw;
+  height: 100vh;
+}
+.gallery_container h1 {
+  font-size: 3.5rem;
+  color: rgb(221, 131, 101);
+  text-transform: uppercase;
+  padding: 2rem;
+  text-align: center;
+  text-shadow: 2px 3px 10px rgb(17, 17, 17);
+}
+.gallery_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery_img {
+  position: relative;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.gallery_img img {
+  max-width: 35rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.6);
+}
+.gallery_img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s all;
+}
